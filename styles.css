@@ -1,0 +1,127 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Variables */
+:root {
+  /* Font */
+  --ff-primary: "Kumbh Sans", sans-serif;
+
+  /* Colors */
+  --blue-1: #2e3349;
+  --blue-2: #19a1ae;
+  --white: #fff;
+  --grey: #6b7082;
+
+  /* Font Sizes */
+  --fs-1: 1.125rem;
+  --fs-2: 0.875rem;
+  --fs-3: 0.625rem;
+
+  /* Font Weights */
+  --fw-1: 700;
+  --fw-2: 400;
+}
+
+/* Utility Classes */
+/* Font */
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+/* Colors */
+.blue-1 {
+  color: var(--blue-1);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+/* Background Colors */
+.white-bg {
+  background-color: var(--white);
+}
+
+.blue-2-bg {
+  background-color: var(--blue-2);
+}
+
+/* Text Presets */
+.tp-1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-1);
+}
+
+.tp-2 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-2);
+}
+
+.tp-3 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-2);
+}
+
+.tp-4 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-2);
+}
